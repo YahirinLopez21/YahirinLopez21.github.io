@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yahirin Abdiel Lopez Fraustro</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --accent: #00796b;
+      --muted: #555;
+      --border: #e0e0e0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: var(--bg);
+      color: #222;
+    }
+
+    .stage {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .left {
+      background: linear-gradient(160deg, var(--accent), #26a69a);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: white;
+      color: var(--accent);
+      font-size: 36px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .role {
+      margin-top: 6px;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    .right {
+      padding: 40px 30px;
+    }
+
+    .sub {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .badges {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      background: #e0f2f1;
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .about p {
+      margin-top: 14px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .social a {
+      display: inline-flex;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #e0f2f1;
+      color: var(--accent);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .social a:hover {
+      background: #b2dfdb;
+    }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+      .left {
+        padding: 20px;
+      }
+      .right {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <section class="card">
+      <div class="left">
+        <div class="avatar">YL</div>
+        <div class="name">Yahirin Abdiel Lopez Fraustro</div>
+        <div class="role">Soporte Técnico en Hardware</div>
+      </div>
+      <div class="right">
+        <p class="sub">Soy especialista en soporte técnico de hardware con experiencia en diagnóstico, reparación y mantenimiento de equipos de cómputo. Me enfoco en garantizar el óptimo funcionamiento de computadoras, impresoras, redes locales y periféricos, brindando soluciones rápidas y efectivas a usuarios y empresas.</p>
+
+        <div class="badges">
+          <span class="badge">Diagnóstico de fallas</span>
+          <span class="badge">Mantenimiento preventivo</span>
+          <span class="badge">Redes locales</span>
+          <span class="badge">Instalación de hardware</span>
+        </div>
+
+        <div class="about">
+          <p><strong>Resumen profesional:</strong> Más de 3 años brindando soporte técnico en hardware, incluyendo reparación de equipos de escritorio y portátiles, actualización de componentes y configuración de sistemas. He colaborado en la implementación de planes de mantenimiento preventivo para reducir fallos y mejorar el rendimiento de la infraestructura tecnológica.</p>
+
+          <p><strong>Contacto:</strong> Disponible en Facebook (ícono en la parte inferior).</p>
+        </div>
+
+        <div class="footer">
+          <nav class="social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
+              <!-- Facebook SVG -->
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.97 3.66 9.09 8.44 9.86v-6.99H8.47v-2.87h2V9.65c0-1.98 1.17-3.08 2.96-3.08.86 0 1.76.15 1.76.15v1.95h-1c-.99 0-1.3.62-1.3 1.26v1.51h2.22l-.36 2.87h-1.86V22c4.78-.77 8.44-4.89 8.44-9.93z"/>
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
